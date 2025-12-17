@@ -1,7 +1,7 @@
 **FYI : Changes to Main Branch is Restricted Since Commit to Main meant to be Triggering the GIT Actions End up in Production Deployments.**
 
 
-** Local Set  Up  : Use your preferred IDE**
+**Local Set  Up  : Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
