@@ -2,95 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+/* Industrial B2B Design System for Oiltech */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Industrial color palette */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep industrial slate blue */
+    --primary: 215 50% 23%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Light technical gray */
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted surfaces */
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Industrial amber accent */
+    --accent: 38 92% 50%;
+    --accent-foreground: 215 25% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 50% 23%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom industrial tokens */
+    --industrial-dark: 215 30% 12%;
+    --industrial-steel: 215 15% 35%;
+    --industrial-light: 210 20% 96%;
+    --industrial-amber: 38 92% 50%;
+    --industrial-amber-dark: 30 85% 45%;
+    --industrial-success: 142 70% 40%;
+    --industrial-warning: 45 93% 47%;
+    
+    /* Technical data colors */
+    --spec-header: 215 25% 20%;
+    --spec-row-alt: 210 15% 97%;
+    --spec-border: 214 20% 85%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.08), 0 2px 4px -2px hsl(215 25% 15% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -4px hsl(215 25% 15% / 0.05);
+    --shadow-industrial: 0 4px 20px -2px hsl(215 30% 12% / 0.15);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 215 30% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 28% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 28% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 38 92% 50%;
+    --primary-foreground: 215 25% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 15% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 215 25% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 38 92% 50%;
+
+    --industrial-dark: 215 30% 6%;
+    --industrial-steel: 215 15% 55%;
+    --industrial-light: 215 25% 15%;
+    
+    --spec-header: 215 25% 15%;
+    --spec-row-alt: 215 25% 10%;
+    --spec-border: 215 25% 25%;
   }
 }
 
@@ -100,6 +114,114 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight text-foreground;
+  }
+
+  /* Technical mono text for part numbers */
+  .part-number {
+    @apply font-mono text-sm tracking-wide;
+  }
+
+  /* Spec table styling */
+  .spec-table {
+    @apply w-full border-collapse;
+  }
+
+  .spec-table th {
+    @apply bg-primary text-primary-foreground text-left py-3 px-4 text-sm font-semibold uppercase tracking-wider;
+  }
+
+  .spec-table td {
+    @apply py-3 px-4 border-b border-spec-border text-sm;
+  }
+
+  .spec-table tr:nth-child(even) td {
+    @apply bg-spec-row-alt;
+  }
+
+  .spec-table tr:hover td {
+    @apply bg-accent/10;
+  }
+}
+
+@layer components {
+  /* Industrial button variants */
+  .btn-industrial {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-sm uppercase tracking-wider transition-all duration-200;
+  }
+
+  .btn-industrial-primary {
+    @apply btn-industrial bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg;
+  }
+
+  .btn-industrial-accent {
+    @apply btn-industrial bg-accent text-accent-foreground hover:bg-industrial-amber-dark shadow-md hover:shadow-lg;
+  }
+
+  .btn-industrial-outline {
+    @apply btn-industrial border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+  }
+
+  /* Card variants */
+  .card-industrial {
+    @apply bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  /* Trust badge */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-md text-sm font-medium text-muted-foreground;
+  }
+
+  /* Sticky CTA */
+  .sticky-cta {
+    @apply fixed bottom-0 left-0 right-0 bg-primary p-4 shadow-lg z-50 md:hidden;
+  }
+
+  /* WhatsApp button */
+  .whatsapp-btn {
+    @apply fixed bottom-20 right-4 md:bottom-6 md:right-6 w-14 h-14 bg-[hsl(142,70%,40%)] rounded-full shadow-lg flex items-center justify-center text-white hover:scale-110 transition-transform z-40;
+  }
+}
+
+@layer utilities {
+  /* Industrial gradients */
+  .gradient-industrial {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--industrial-dark)) 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--industrial-amber-dark)) 100%);
+  }
+
+  /* Text gradients */
+  .text-gradient-industrial {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--industrial-steel)) 100%);
+  }
+
+  /* Animated underline */
+  .underline-industrial {
+    @apply relative;
+  }
+
+  .underline-industrial::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300;
+  }
+
+  .underline-industrial:hover::after {
+    @apply w-full;
+  }
+
+  /* Industrial pattern background */
+  .pattern-grid {
+    background-image: 
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
