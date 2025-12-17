@@ -36,7 +36,7 @@ export function CTASection() {
                 Request Quote
               </Button>
             </Link>
-            <a href="tel:+18005550123">
+            <a href="tel:+918072769573">
               <Button className="btn-industrial bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary rounded-md w-full sm:w-auto">
                 <Phone className="w-4 h-4 mr-2" />
                 Call (800) 555-0123
