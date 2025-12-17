@@ -1,4 +1,4 @@
-****FYI : Changes to Main Branch is Restricted Since Commit to Main meant to be Triggering the GIT Actions End up in Production Deployments. ****
+**FYI : Changes to Main Branch is Restricted Since Commit to Main meant to be Triggering the GIT Actions End up in Production Deployments.**
 
 
 **Use your preferred IDE**
