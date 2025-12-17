@@ -15,8 +15,8 @@ const resources = [
   { id: 3, name: "Parker Hydraulic Pump Guide", brand: "Parker", type: "catalog", size: "28 MB", gated: true },
   { id: 4, name: "4WE6 Valve 2D CAD Drawing", brand: "Rexroth", type: "cad", size: "450 KB", gated: false },
   { id: 5, name: "CDQ2B Cylinder 3D Model", brand: "SMC", type: "cad", size: "2.1 MB", gated: false },
-  { id: 6, name: "Hydraulic System Design Guide", brand: "Oiltech", type: "guide", size: "8.5 MB", gated: true },
-  { id: 7, name: "Pneumatic Sizing Calculator", brand: "Oiltech", type: "tool", size: "1.2 MB", gated: true },
+  { id: 6, name: "Hydraulic System Design Guide", brand: "SET Engineering", type: "guide", size: "8.5 MB", gated: true },
+  { id: 7, name: "Pneumatic Sizing Calculator", brand: "SET Engineering", type: "tool", size: "1.2 MB", gated: true },
   { id: 8, name: "Eaton Vickers Valve Catalog", brand: "Eaton", type: "catalog", size: "38 MB", gated: true },
   { id: 9, name: "Danfoss Motor Selection Guide", brand: "Danfoss", type: "catalog", size: "22 MB", gated: true },
   { id: 10, name: "A10VSO Pump 3D Model", brand: "Rexroth", type: "cad", size: "3.8 MB", gated: false },
@@ -30,7 +30,7 @@ const types = [
   { value: "tool", label: "Tools & Calculators" },
 ];
 
-const brands = ["All", "Rexroth", "SMC", "Parker", "Eaton", "Danfoss", "Oiltech"];
+const brands = ["All", "Rexroth", "SMC", "Parker", "Eaton", "Danfoss", "SET Engineering"];
 
 export default function ResourcesPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -247,7 +247,7 @@ export default function ResourcesPage() {
               )}
             </Button>
             <p className="text-xs text-muted-foreground text-center">
-              By submitting, you agree to receive technical communications from Oiltech.
+              By submitting, you agree to receive technical communications from SET Engineering.
             </p>
           </form>
         </DialogContent>

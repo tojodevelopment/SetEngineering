@@ -50,7 +50,7 @@ export function Footer() {
                 <span className="text-accent-foreground font-bold text-xl">OT</span>
               </div>
               <div>
-                <div className="font-bold text-xl">OILTECH</div>
+                <div className="font-bold text-xl">SET Engineering</div>
                 <div className="text-xs text-primary-foreground/60 uppercase tracking-wider">
                   Industrial Solutions
                 </div>
@@ -67,7 +67,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Mail className="w-4 h-4 text-accent" />
-                sales@oiltech.com
+                sales@setengineering.com
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <MapPin className="w-4 h-4 text-accent" />
@@ -177,7 +177,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/50">
-          <div>© {new Date().getFullYear()} Oiltech Industrial Solutions. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} SET Engineering Industrial Solutions. All rights reserved.</div>
           <div className="flex items-center gap-6">
             <Link to="/privacy" className="hover:text-accent transition-colors">
               Privacy Policy

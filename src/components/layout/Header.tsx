@@ -73,7 +73,7 @@ export function Header() {
               <span className="text-primary-foreground font-bold text-lg lg:text-xl">OT</span>
             </div>
             <div className="hidden sm:block">
-              <div className="font-bold text-lg lg:text-xl text-foreground">OILTECH</div>
+              <div className="font-bold text-lg lg:text-xl text-foreground">SET Engineering</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">
                 Industrial Solutions
               </div>

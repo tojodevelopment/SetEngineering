@@ -88,10 +88,10 @@ export default function RFQPage() {
                       <div className="text-muted-foreground text-xs">Toll-free</div>
                     </div>
                   </a>
-                  <a href="mailto:sales@oiltech.com" className="flex items-center gap-3 text-sm text-foreground hover:text-primary">
+                  <a href="mailto:sales@setengineering.com" className="flex items-center gap-3 text-sm text-foreground hover:text-primary">
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
-                      <div className="font-medium">sales@oiltech.com</div>
+                      <div className="font-medium">sales@setengineering.com</div>
                       <div className="text-muted-foreground text-xs">Email us</div>
                     </div>
                   </a>

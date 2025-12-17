@@ -77,13 +77,13 @@ export default function ContactPage() {
                     <div className="text-sm text-muted-foreground">Toll-free</div>
                   </div>
                 </a>
-                <a href="mailto:sales@oiltech.com" className="flex items-start gap-4 group">
+                <a href="mailto:sales@setengineering.com" className="flex items-start gap-4 group">
                   <div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                      sales@oiltech.com
+                      sales@setengineering.com
                     </div>
                     <div className="text-sm text-muted-foreground">Email us anytime</div>
                   </div>
